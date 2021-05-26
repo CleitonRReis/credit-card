@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Credit Card</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="datails">
+            <i class="fas fa-chevron-left"></i>
+            <p>Detalhes do pagamento</p>
+        </div>
+
+        <div class="card flip">
+            <div class="datails-card front face">
+                <div class="info-card">
+                    <div class="number">
+                        <p></h2>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="name">
+                            <h3></h3>
+                        </div>
+                        <div class="expiration-date">
+                            <h3></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back-of-card back face">
+                <div class="cvv-back"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-input">
+        <form class="form">
+            <div class="input-name">
+                <input type="text" class="form-input" name="name" class="teste" placeholder=" "/>
+                <label class="text-name">Nome impresso no cartão</label>
+            </div>
+
+            <div class="input-number">
+                <input type="text" class="form-input" name="number" placeholder=" "/>
+                <label class="label-number">
+                    Número do cartão
+                </label>
+            </div>
+
+            <div class="input-date">
+                <div class="date">
+                    <p>Validade</p>
+                    <input type="month" class="form-input" name="date" placeholder="validade" placeholder=" "/>
+                </div>
+                
+                <div class="cvv">
+                    <input type="text" class="form-input" name="cvv" placeholder=" "/>
+                    <label class="label-cvv">
+                        CVV
+                    </label>
+                </div>
+            </div>
+
+            <div class="button">
+                <button class="btn">Continuar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
